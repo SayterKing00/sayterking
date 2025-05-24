@@ -60,7 +60,7 @@ export default function HeroSection() {
       <section id="videos" className="py-16 min-h-[400px] flex items-center justify-center">
         <div className="container mx-auto text-center">
           <p className="text-xl text-neon-pink">Hata: {error}</p>
-          <p className="text-brand-secondary-text mt-2">Lütfen 'public/videos.json' dosyasının doğru formatta (videoId içermeli) ve erişilebilir olduğundan emin olun.</p>
+          <p className="text-brand-secondary-text mt-2">Lütfen &apos;public/videos.json&apos; dosyasının doğru formatta (videoId içermeli) ve erişilebilir olduğundan emin olun.</p>
         </div>
       </section>
     );
@@ -71,7 +71,7 @@ export default function HeroSection() {
       <section id="videos" className="py-16 min-h-[400px] flex items-center justify-center">
         <div className="container mx-auto text-center">
           <p className="text-xl text-neon-purple">Gösterilecek video bulunamadı.</p>
-          <p className="text-brand-secondary-text mt-2">Lütfen 'public/videos.json' dosyasına video eklediğinizden emin olun.</p>
+          <p className="text-brand-secondary-text mt-2">Lütfen &apos;public/videos.json&apos; dosyasına video eklediğinizden emin olun.</p>
         </div>
       </section>
     );
