@@ -60,9 +60,9 @@ class Particle {
     ctx.fillStyle = this.color;
     ctx.fill();
 
-    // Add glow effect
+    // Enhanced glow effect
     ctx.shadowColor = this.color;
-    ctx.shadowBlur = 15;
+    ctx.shadowBlur = 20;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 0;
   }
@@ -94,7 +94,7 @@ const FluidBackground = () => {
     // Initialize particles
     const initParticles = () => {
       particlesRef.current = [];
-      for (let i = 0; i < 100; i++) {
+      for (let i = 0; i < 150; i++) {
         particlesRef.current.push(
           new Particle(
             Math.random() * canvas.width,
@@ -106,8 +106,8 @@ const FluidBackground = () => {
 
     // Animation loop
     const animate = () => {
-      // Fill with solid dark gray background
-      ctx.fillStyle = '#1E1E1E'; // Solid dark gray
+      // Fill with brand-dark background
+      ctx.fillStyle = '#101010'; // Original brand-dark color
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw particles
